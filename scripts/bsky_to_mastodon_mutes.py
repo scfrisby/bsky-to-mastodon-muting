@@ -118,9 +118,6 @@ def mastodon_search_account(bridged_handle, token, instance):
         full = f"{acct.get('username')}@{acct.get('acct', '').split('@')[-1]}" if "@" in acct.get("acct", "") else acct.get("acct")
         if acct.get("acct", "").lower() == bridged_handle.lower() or acct.get("acct", "").lower() == bridged_handle.split("@")[0].lower():
             return acct["id"], None
-    if results:
-        # fall back to first result if search matched something close
-        return results[0]["id"], None
     return None, "no account found"
 
 
