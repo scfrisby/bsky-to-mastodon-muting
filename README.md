@@ -1,4 +1,4 @@
-# bsky-to-mastodon-muting
+# mue-mover: bsky-to-mastodon-muting
 
 Two small scripts for carrying your moderation setup from Bluesky over to Mastodon:
 
